@@ -87,7 +87,7 @@ class PollReader():
 
         if harris > trump:
             return (f"Harris: {harris}%")
-        elif harris < trump:
+        elif trump > harris:
             return (f"Trump: {trump}%")
         else:
             return (f"EVEN: {harris}%")

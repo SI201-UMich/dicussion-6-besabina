@@ -68,7 +68,7 @@ class PollReader():
             self.data_dict['Harris result'].append(float(seperated[3]))
             self.data_dict['Trump result'].append(float(seperated[4]))
 
-            print(self.data_dict)
+         #   print(self.data_dict)
 
 
     def highest_polling_candidate(self):
@@ -102,7 +102,14 @@ class PollReader():
             tuple: A tuple containing the average polling percentages for Harris and Trump
                    among likely voters, in that order.
         """
-        pass
+        harris = 0
+        trump = 0
+        count = 0
+        print(self.data_dict['sample type'])
+
+      #  for i in range(len(self.data_dict['sample type'])):
+      #      for self.data_dict['sample type'][i] == 'LV':
+
 
 
     def polling_history_change(self):
